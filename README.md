@@ -15,11 +15,27 @@ versioned, validated, and reused like any other code.
   `skelet-prompt-pack-<name>` depending on `skelet` (or `skelet-standard`).
   See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Install only what you need:
+## Install
+
+Not on PyPI yet — install directly from git:
 
 ```bash
-pip install skelet              # core primitives only
-pip install skelet-standard      # + standard tools/skills (pulls in skelet)
+pip install git+https://github.com/anshjoseph/Skelet.git                                    # core primitives only
+pip install "git+https://github.com/anshjoseph/Skelet.git#subdirectory=skelet-standard"       # + standard tools/skills
+pip install "git+https://github.com/anshjoseph/Skelet.git#subdirectory=skelet-prompt-pack-media"  # + generative-media prompts
+```
+
+Each is independent — install only the package(s) you need (`skelet-standard`
+and `skelet-prompt-pack-media` both depend on `skelet` and will pull it in).
+
+Working on the library itself instead? Clone and install editable:
+
+```bash
+git clone https://github.com/anshjoseph/Skelet.git
+cd Skelet
+pip install -e .
+pip install -e skelet-standard
+pip install -e skelet-prompt-pack-media
 ```
 
 ## Core primitives (`skelet.core`)

@@ -14,8 +14,10 @@ Each skill is advisory: it shapes an LLM's structured output into a
 well-formed spec, but doesn't generate pixels/meshes itself — that's the
 downstream generator's job.
 
+Not on PyPI yet — install directly from git:
+
 ```bash
-pip install skelet-prompt-pack-media
+pip install "git+https://github.com/anshjoseph/Skelet.git#subdirectory=skelet-prompt-pack-media"
 ```
 
 ```python
