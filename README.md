@@ -79,6 +79,8 @@ Runnable examples:
   ReAct, and structured extraction outputs.
 - [example/exp6_skills.py](example/exp6_skills.py) — triage, customer care,
   and per-language convention review (with registry fallback).
+- [example/exp7_media.py](example/exp7_media.py) — generative-media prompt
+  specs (image, video, 3D object, sprite sheet) from `skelet-prompt-pack-media`.
 
 ## Adding your own tools/skills
 
